@@ -3,6 +3,17 @@
 <head>
 
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#Direction").click(function(){
+				$(".esconder").toggle("showOrHide");
+			});
+			$("#Everything").click(function(){
+				$(".esconder").toggle("showOrHide");
+			});
+		});
+	</script>
   </head>
 
 
@@ -24,20 +35,20 @@
 	   	 		<div class=" f5  pt0-ns pt4  pl0-ns pl5 lh-title measure-narrow-ns fl  w-50 ">I love to learn everyday, follow my gut and connection with creative spirits. </br></br> Here is a selection of my work:
 
 	   	 			<div class="fl w-100 ">
-	   	 				<div class=" fl pt3 pr3-ns b">Selected.</div>
-	   	 				<div class=" fl pt3 pr3-ns b black-60">Direction.</div>
-	   	 				<div class=" fl pt3 pr3-ns b black-60">Commercial.</div>
-	   	 				<div class=" fl pt3 pr3-ns b black-60">Paint.</div>
-	   	 				<div class=" fl pt3 pr3-ns b black-60">Print.</div>
-	   	 				<div class=" fl pt3 pr3-ns b black-60">Motion.</div>
-	   	 				<div class=" fl pt3 pr3-ns b black-60">Everything.</div>
+	   	 				<div class=" fl pt3 pr3-ns b" id="Selected">Selected.</div>
+	   	 				<div class=" fl pt3 pr3-ns b black-60" id="Direction">Direction.</div>
+	   	 				<div class=" fl pt3 pr3-ns b black-60" id="Commercial">Commercial.</div>
+	   	 				<div class=" fl pt3 pr3-ns b black-60" id="Paint">Paint.</div>
+	   	 				<div class=" fl pt3 pr3-ns b black-60" id="Print">Print.</div>
+	   	 				<div class=" fl pt3 pr3-ns b black-60" id="Motion">Motion.</div>
+	   	 				<div class=" fl pt3 pr3-ns b black-60" id="Everything">Everything.</div>
 	   	 			</div>
 	   	 		</div>
 	   	 	 </div>
 
 		<div class="fl pt3 w-100 helvetica" ></div>
 <!--  Project 1 -->
-		<div class="w-50-ns w-90 fl  pr2   pt4  pl5" >
+		<div class="w-50-ns w-90 fl  pr2   pt4  pl5 esconder" >
 			<div class="aspect-ratio aspect-ratio--16x9-ns aspect-ratio--16x9">
 				<div class="aspect-ratio--object cover" style="background:url(images/ddlthumb.png) center;"></div>
 			</div>
